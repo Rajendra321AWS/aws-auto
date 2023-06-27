@@ -12,11 +12,11 @@ env:
   AWS_SECRET_ACCESS_KEY: ${{ SECRETS.AWS.SECRET_ACCESS_KEY }}
   
 jobs: 
-  - name: desplay running instance
-    runs-on: ubuntu-latest
-    steps: 
-      run: apt-get update
-      run: apt-get install awscli -y
-      run: aws ec2 describe-instances --region us-east-1
+  name: desplay running instance
+  runs-on: ubuntu-latest
+  steps: 
+      - run: apt-get update
+      - run: apt-get install awscli -y
+      - run: aws ec2 describe-instances --region us-east-1
 
 
