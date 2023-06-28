@@ -1,4 +1,4 @@
-iname: launch ec2 instance
+name: launch ec2 instance
 
 on:
   push:
